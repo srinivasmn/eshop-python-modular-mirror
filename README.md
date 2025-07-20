@@ -1,7 +1,14 @@
 # eShop Python Modular Mirror (FastAPI + CQRS)
 
-This is a FastAPI-based backend skeleton that mirrors a .NET-style modular monolith architecture using Python.  
-CQRS, Command Handlers, Domain Separation, and routing abstraction included.
+This project is a FastAPI-based backend skeleton that mirrors a .NET-style modular monolith architecture using Python.
+
+It demonstrates:
+- CQRS (Command Query Responsibility Segregation)
+- Clean architecture with domain separation
+- Command handlers and routing abstraction
+- Designed for future expansion with outbox, messaging, Docker, and CI/CD
+
+---
 
 ## Project Structure
 
