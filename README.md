@@ -12,17 +12,18 @@ It demonstrates:
 
 ## Project Structure
 
+<pre>
 eshop-python-modular-mirror/
 ├── app/
-│ ├── api/ # FastAPI entry point + routes
-│ ├── application/ # CQRS command handlers
-│ ├── domain/ # Data models / Entities
-│ └── infrastructure/ # (Planned: DB, messaging, etc.)
-├── tests/ # (To be added)
+│   ├── api/             # FastAPI entry point + routes
+│   ├── application/     # CQRS command handlers
+│   ├── domain/          # Data models / Entities
+│   └── infrastructure/  # (Planned: DB, messaging, etc.)
+├── tests/               # (To be added)
 ├── requirements.txt
 ├── .env.example
 ├── README.md
-
+</pre>
 
 ## How to Run (Dev)
 
@@ -47,7 +48,7 @@ curl -X POST http://localhost:8000/orders \
   -d "{\"customer_id\":101,\"product_id\":22,\"quantity\":5}"
 
 
-# Response should be:
+# Expected Response:
 {
   "order_id": 1,
   "status": "Created",
@@ -67,6 +68,22 @@ If time permits, create a Postman request for `/orders`:
     "product_id": 22,
     "quantity": 5
   }
+
+#  Notes
+# This is an early modular slice to demonstrate structure and CQRS principles.
+
+# Features like DB, outbox, messaging, Docker, tests, and CI/CD are planned.
+
+# Designed to mirror an Udemy-like architecture in Python.
+
+# Author
+# Srinivas Nath
+https://github.com/srinivasmn
+
+
+
+
+
 
 
 
